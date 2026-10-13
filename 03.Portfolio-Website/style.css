@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(204, 232, 232); */
+    background-image: linear-gradient(to right,rgb(134, 206, 231),rgba(114, 129, 207, 0.221));
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    /* background-color: rgb(44, 51, 86); */
+    background-image:linear-gradient(to right,rgb(66, 88, 127),rgb(5, 16, 35));
+    color: rgb(203, 200, 196);
+    align-items: center;
+}
+.logo{
+  
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+nav ul li{
+    display: flex;
+    font-size: 15px;
+    text-decoration: none;
+}
