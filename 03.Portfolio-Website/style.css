@@ -19,7 +19,11 @@ nav{
 .logo{
   
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 50px;
+     font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  
+
 }
 nav ul{
     display: flex;
