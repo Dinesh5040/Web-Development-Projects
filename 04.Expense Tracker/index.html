@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paisa - Expense Tracker</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="head"><div class="logo">Paisa<span>.</span></div><small>Your money, made clear</small></header>
+  <h1>Expense overview</h1><p class="lead">Track what comes in, what goes out, and what stays with you.</p>
+  <section class="cards">
+    <div class="card"><small>Total income</small><div class="amount income" id="incomeTotal">₹0.00</div></div>
+    <div class="card"><small>Total expenses</small><div class="amount expense" id="expenseTotal">₹0.00</div></div>
+    <div class="card"><small>Current balance</small><div class="amount" id="balance">₹0.00</div></div>
+  </section>
+  <div class="layout">
+    <section class="box">
+      <h2 id="formTitle">＋ Add transaction</h2>
+      <form id="form">
+        <label for="title">Description</label><input id="title" placeholder="e.g. Monthly stipend" maxlength="70" required>
+        <label for="amount">Amount (₹)</label><input id="amount" type="number" min="0.01" step="0.01" placeholder="0.00" required>
+        <label for="type">Transaction type</label><select id="type"><option value="income">Income</option><option value="expense">Expense</option></select>
+        <label for="category">Category</label><select id="category"><option>Salary</option><option>Freelance</option><option>Food</option><option>Travel</option><option>Shopping</option><option>Bills</option><option>Education</option><option>Health</option><option>Other</option></select>
+        <label for="date">Date</label><input id="date" type="date" required>
+        <button id="submitBtn">Add transaction</button><button type="button" id="cancel" class="cancel">Cancel edit</button>
+      </form>
+      <p class="hint">Transactions are saved in this browser using Local Storage.</p>
+    </section>
+    <section class="box">
+      <h2>Transaction history</h2>
+      <div class="filters">
+        <input id="search" placeholder="Search transactions">
+        <select id="categoryFilter"><option value="all">All categories</option><option>Salary</option><option>Freelance</option><option>Food</option><option>Travel</option><option>Shopping</option><option>Bills</option><option>Education</option><option>Health</option><option>Other</option></select>
+        <select id="typeFilter"><option value="all">All types</option><option value="income">Income</option><option value="expense">Expense</option></select>
+      </div>
+      <div id="history"></div>
+    </section>
+  </div>
+</main>
+<script src="script.js"></script>
+</body></html>

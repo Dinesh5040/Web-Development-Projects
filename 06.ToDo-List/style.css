@@ -1,0 +1,11 @@
+:root{--bg:#f4f6fb;--card:#fff;--text:#182033;--muted:#778097;--accent:#6658e8;--green:#159b72;--line:#e8eaf2}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text);padding:32px 16px}
+.app{max-width:900px;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:26px}.brand{font-size:25px;font-weight:800}.brand span{color:var(--accent)}.date{color:var(--muted);font-size:14px}
+.panel{background:var(--card);border-radius:20px;padding:24px;box-shadow:0 12px 35px #20254a0c;margin-bottom:18px}
+h1{margin:0 0 7px;font-size:28px}.sub{color:var(--muted);margin:0 0 22px}
+form{display:grid;grid-template-columns:1fr auto;gap:10px}input,select,button{font:inherit;border-radius:11px;padding:12px 14px;border:1px solid var(--line)}input:focus,select:focus{outline:2px solid #d9d5ff;border-color:var(--accent)}
+button{border:0;background:var(--accent);color:white;font-weight:650;cursor:pointer}button:hover{filter:brightness(.95)}.extras{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.stat{background:white;border-radius:16px;padding:17px}.stat b{display:block;font-size:25px}.stat small{color:var(--muted)}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}.tools input{flex:1;min-width:180px}.tools select{min-width:130px}
+.task{display:flex;align-items:center;gap:12px;padding:15px 2px;border-bottom:1px solid var(--line)}.task:last-child{border:0}.task input[type=checkbox]{width:19px;height:19px;accent-color:var(--green)}.taskmain{flex:1;min-width:0}.taskname{font-weight:650;overflow-wrap:anywhere}.done .taskname{text-decoration:line-through;color:#9ba2b1}.meta{font-size:12px;color:var(--muted);margin-top:4px}.tag{display:inline-block;background:#f0efff;color:#6254d9;border-radius:20px;padding:4px 9px;font-size:11px;margin-right:5px}.priority{font-size:11px;color:#c26b28}.actions{display:flex;gap:6px}.icon{background:#f1f2f8;color:#50566a;padding:8px 10px}.empty{text-align:center;color:var(--muted);padding:30px 10px}
+@media(max-width:600px){body{padding:20px 12px}.panel{padding:18px}.extras{grid-template-columns:1fr 1fr}.stats{gap:7px}.stat{padding:12px}.stat b{font-size:21px}.task{gap:8px}.actions button{padding:7px}}

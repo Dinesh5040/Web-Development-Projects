@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wave - Music Player</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="player">
+  <header class="top"><div class="brand">WAVE<span>.</span></div><div class="badge">YOUR MUSIC SPACE</div></header>
+  <div class="art" id="art"><div class="disc">♫</div></div>
+  <section class="info"><h1 id="title">Choose a song</h1><p id="artist">Add audio files from your device</p></section>
+  <div class="timeline"><input class="range" id="seek" type="range" min="0" max="100" value="0"><div class="times"><span id="current">0:00</span><span id="duration">0:00</span></div></div>
+  <div class="controls"><button class="ctrl" id="prev" aria-label="Previous">⏮</button><button class="ctrl play" id="play" aria-label="Play">▶</button><button class="ctrl" id="next" aria-label="Next">⏭</button></div>
+  <div class="bottom"><span>🔈</span><input id="volume" type="range" min="0" max="1" step=".01" value=".8"><button class="ctrl mute" id="mute">Mute</button></div>
+  <div class="playlistHead"><b>PLAYING QUEUE</b><label class="add" for="files">＋ Add songs</label><input id="files" type="file" accept="audio/*" multiple></div>
+  <div id="playlist"><div class="song"><span class="num">♪</span><div class="songmeta"><b>Your playlist is empty</b><small>Choose audio files to begin</small></div></div></div>
+  <p class="note">Audio files are played locally in your browser. Your music files are not uploaded anywhere.</p>
+  <audio id="audio"></audio>
+</main>
+<script src="script.js"></script>
+</body></html>
